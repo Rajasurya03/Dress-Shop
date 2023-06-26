@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/Style.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <title>Contact Page</title>
+    <title>Cart Page</title>
 </head>
 <body>
     <section id="header">
@@ -19,8 +19,8 @@
                 <li><a  href="Shop.html">Shop</a></li>
                 <li><a href="Blog.html">Blog</a></li>
                 <li><a href="About.html">About</a></li>
-                <li><a class="active" href="Contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="fas fa-times"></i></a>
             </ul>
         </div>
@@ -35,71 +35,72 @@
         <p>Leave a message, We love to hear from you!</p>
     </section>
 
-    <section id="contact-details" class="section-p1">
-        <div class="details">
-            <span>GET IN TOUCH</span>
-            <h2>Visit one of our agency locations or contact us today</h2>
-            <h3>Head Office</h3>
-            <div>
-                <li>
-                    <i class="fa fa-map"></i>
-                    <p>56 Glassford Street Glasgow G1 1UL New York</p>
-                </li>
-                <li>
-                    <i class="far fa-envelope"></i>
-                    <p>contact@example.com</p>
-                </li>
-                <li>
-                    <i class="fas fa-phone-alt"></i>
-                    <p>+91-9087967875</p>
-                </li>
-                <li>
-                    <i class="far fa-clock"></i>
-                    <p>Monday to Saturday: 9:00am to 21:00pm</p>
-                </li>
-            </div>
-        </div>
-
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3905.750034703071!2d78.05699668047261!3d11.782642558611933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf8f87b1279e3%3A0xbe8dbb2438f66f95!2sSalem%20Airport!5e0!3m2!1sen!2sin!4v1687700329293!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="../../Image/Dress/Shirt-1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="../../Image/Dress/Shirt-2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="../../Image/Dress/Shirt-3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$78</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$78</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
-    <section id="form-details">
-        <form action="">
-            <span>Leave a message</span>
-            <h2>We love to hear from you </h2>
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="E-Mail">
-            <input type="text" placeholder="Subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <button class="normal">Submit</button>
-        </form>
-
-        <div class="people">
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
             <div>
-                <img src="../../Image/Contact/img1.jpeg" alt="">
-                <p><span>Jone Doe</span> Senior Marketing Manager <br> Phone: +000 123 000 77 88  <br>Email: contact@example.com</p>
-            </div>
-            <div>
-                <img src="../../Image/Contact/img3.jpeg" alt="">
-                <p><span>William Smith</span> Senior Marketing Manager <br> Phone: +000 123 000 77 88  <br>Email: contact@example.com</p>
-            </div>
-            <div>
-                <img src="../../Image/Contact/img2.jpeg" alt="">
-                <p><span>Emma Stone</span> Senior Marketing Manager <br> Phone: +000 123 000 77 88  <br>Email: contact@example.com</p>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
             </div>
         </div>
-    </section>
-
-    <section id="newsletter" class="section-p1  section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>Set E-mail updates about our latest shp and <span>Special Offers.</span></p>
-        </div>
-        <div class="form">
-            <input type="email" placeholder="Your email address">
-            <button type="submit" class="normal">Sign Up</button>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$234</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$234</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
         </div>
     </section>
 
